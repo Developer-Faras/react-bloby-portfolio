@@ -15,6 +15,7 @@ const About = () => {
 
           <div className="about_info">
 
+            <h2 className="about_name">Md Faras Uddin</h2>
             <p className="about_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore at deserunt excepturi veritatis quae aliquam. Repellendus inventore aliquid non eos soluta aperiam in quasi cum, explicabo facere officia, vero incidunt, velit hic dicta. Corporis perspiciatis voluptatum necessitatibus consequatur possimus?</p>
 
             <a href="#download" className="btn cv_btn">Download CV</a>
