@@ -1,0 +1,188 @@
+.home {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.intro {
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+}
+
+.intro img {
+    width: 120px;
+}
+
+.intro .home_name {
+    font-size: 30px;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    color: var(--title-color);
+}
+
+.intro .home_education {
+    font-size: 17px;
+    font-weight: var(--normal);
+    margin-bottom: 1.4rem;
+}
+
+
+/* Intro Sosials */
+.intro .header_sosials {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.intro .header_sosials ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro .header_sosials ul li a {
+    margin: 0.5rem;
+    font-size: 26px;
+    padding: 0.2rem;
+    color: var(--title-color);
+    transition: all 0.2s ease;
+    display: block;
+}
+
+.intro .header_sosials ul li a:hover {
+    transform: scale(0.9);
+    color: var(--primary-color);
+}
+
+/* Scroll Down */
+.scroll_down {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll_down .scroll_text {
+    font-size: 14px;
+    font-weight: var(--normal);
+    color: var(--text-color);
+    display: block;
+}
+
+.scroll_down .mouse {
+    height: 1.8rem;
+    display: block;
+    width: 1.25rem;
+    border: 2px solid var(--text-color);
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes mouse-anim {
+    0% {
+        top: 28%;
+    }
+
+    15% {
+        top: 50%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 28%;
+    }
+}
+
+.scroll_down .mouse .wheel {
+    position: absolute;
+    top: .4rem;
+    left: 50%;
+    width: .30rem;
+    height: .30rem;
+    background: var(--title-color);
+    transform: translateX(-50%);
+    border-radius: 100%;
+    animation: mouse-anim 1.8s ease infinite;
+}
+
+/* Shapes */
+.shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.shapes .shape {
+    position: absolute;
+}
+
+.shape.s1 {
+    left: 2%;
+    top: 10%;
+}
+
+.shape.s2 {
+    left: 18%;
+    top: 30%;
+}
+
+.shape.s3 {
+    left: 5%;
+    bottom: 30%;
+}
+
+.shape.s4 {
+    left: 2%;
+    bottom: 10%;
+}
+
+.shape.s5 {
+    left: 44%;
+    top: 10%;
+}
+
+.shape.s6 {
+    left: 36%;
+    bottom: 10%;
+}
+
+.shape.s7 {
+    top: 20%;
+    right: 36%;
+}
+
+.shape.s8 {
+    right: 24%;
+    bottom: 20%;
+}
+
+.shape.s9 {
+    right: 2%;
+    top: 10%;
+}
+
+.shape.s10 {
+    top: 45%;
+    right: 11%;
+}
+
+.shape.s11 {
+    bottom: 10%;
+    right: 2%;
+}

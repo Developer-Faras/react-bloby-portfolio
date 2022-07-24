@@ -1,0 +1,178 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Import All Extarnal Library Css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css');
+
+
+/* Deaclare All Variables */
+:root {
+    /* Colors Variables */
+    --primary-color: rgb(255, 77, 97);
+    --title-color: rgb(53, 50, 82);
+    --text-color: rgb(94, 92, 127);
+    --body-color: rgb(249, 247, 253);
+    --container-color: rgb(255, 255, 255);
+
+    /* Font Family */
+    --font-rubik: 'Rubik', sans-serif;
+    --font-slab: 'Roboto Slab', serif;
+
+    /* Fonts Sizes */
+    --h1-size: 2.25rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.25rem;
+    --normal-size: 1rem;
+    --small-size: 0.875rem;
+    --xsmall-size: 0.813rem;
+
+    /* Font Weight */
+    --xthin: 300;
+    --thin: 400;
+    --normal: 500;
+    --semibold: 600;
+    --bold: 700;
+    --xbold: 800;
+    --xxbold: 900;
+
+    /* Box Shadow */
+    --shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+}
+
+/* Responsive Font Sizes */
+@media screen and (max-width: 1024px) {
+    :root {
+        /* Fonts Sizes */
+        --h1-size: 1.75rem;
+        --h2-size: 1.25rem;
+        --h3-size: 1rem;
+        --normal-size: 0.938rem;
+        --small-size: 0.813rem;
+        --xsmall-size: 0.75rem;
+    }
+}
+
+
+
+/* Base Codes */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--font-rubik);
+    font-size: var(--normal-size);
+}
+
+body {
+    background: var(--body-color);
+    line-height: 1..7;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--semibold);
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Reusable Css */
+.container {
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.section {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.section_title {
+    font-size: var(--h1-size);
+    margin-left: 0.875rem;
+    font-weight: var(--bold);
+    margin-bottom: 3.75rem;
+    position: relative;
+}
+
+.section_title:before {
+    content: '';
+    background: url(./../../assets/dots-bg.svg);
+    width: 2.25rem;
+    height: 2.25rem;
+    position: absolute;
+    top: -0.875rem;
+    left: -0.875rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 0.875rem;
+    box-sizing: 0 0 1px rgba(0, 0, 0, 0);
+    border: 1px solid transparent;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: var(--bold);
+}
+
+@keyframes button_push {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:hover {
+    animation: button_push 0.3s linear 1;
+}
+
+
+/* Main Designs */
+.main-content {
+    margin-left: 110px;
+    padding-left: 2rem;
+}

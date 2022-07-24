@@ -1,0 +1,100 @@
+.about {
+    min-height: 100vh;
+}
+
+.about_container {
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.about_img {
+    border-radius: 5px;
+    border: 5px solid var(--container-color);
+    box-shadow: var(--shadow);
+}
+
+.about_data {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: 0.5rem;
+    padding: 1.8rem;
+    column-gap: 1.8rem;
+}
+
+.about_description {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    color: var(--text-color);
+    font-weight: var(--normal);
+    line-height: 1.5rem;
+}
+
+.skill_data {
+    row-gap: 1.6rem;
+}
+
+.skill_card .skill_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.skill_card .skill_title .skill_name {
+    font-size: 1.2rem;
+    color: var(--title-color);
+}
+
+.skill_card .skill_title .skill_parcent {
+    font-size: 1rem;
+    font-weight: var(--normal);
+    color: var(--text-color);
+}
+
+.skill_card .skill_progres_bar {
+    width: 100%;
+    height: 7px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill_card .skill_progres_bar .skill_progres {
+    height: 100%;
+}
+
+/* About Boxes Design */
+.about_boxes {
+    grid-template-columns: repeat(4, 3fr);
+    margin-top: 5rem;
+    column-gap: 1rem;
+    justify-content: space-between;
+}
+
+.about_box {
+    display: flex;
+    background: var(--container-color);
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+}
+
+.about_box .about_box_icon {
+    font-size: 42px;
+    margin-right: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.about_box .about_box_text h4 {
+    font-size: 22px;
+    color: var(--title-color);
+    margin-bottom: 0.4rem;
+}
+
+.about_box .about_box_text p {
+    font-size: 16px;
+    font-weight: var(--normal);
+    color: var(--text-color);
+}
