@@ -1,7 +1,58 @@
 import React from 'react'
-import './about.css'
+
 import aboutImg from './../../assets/me.jpg'
+
+import './about.css'
+
 import AboutBox from './AboutBox'
+import SkillCard from './SkillCard'
+
+const skillData = [
+  {
+    name: "HTML",
+    parcent: "95%",
+    progresColor: 'rgb(255,209,92)'
+  },
+  {
+    name: "CSS",
+    parcent: "95%",
+    progresColor: 'rgb(255,76,96)'
+  },
+  {
+    name: "React Js",
+    parcent: "80%",
+    progresColor: 'rgb(81 152 253)'
+  },
+  {
+    name: "PHP",
+    parcent: "85%",
+    progresColor: 'rgb(255,0,80)'
+  }
+]
+
+const aboutBoxData = [
+  {
+    icon: 'fa-thumbs-up',
+    title: '120+',
+    description: 'Project Completed'
+  },
+  {
+    icon: 'fa-mug-hot',
+    title: '5220+',
+    description: 'Cup Of Coffee'
+  },
+  {
+    icon: 'fa-users',
+    title: '220+',
+    description: 'Satisfied Client'
+  },
+  {
+    icon: 'fa-award',
+    title: '30+',
+    description: 'Awards Winner'
+  },
+]
+
 
 const About = () => {
   return (
@@ -23,49 +74,7 @@ const About = () => {
 
           <div className="about_skills ">
             <div className="skill_data grid">
-
-              <div className="skill_card">
-                <div className="skill_title">
-                  <h3 className="skill_name">HTML</h3>
-                  <span className="skill_parcent">95%</span>
-                </div>
-                <div className="skill_progres_bar">
-                  <div className="skill_progres" style={{ background: "rgb(255,209,92)", width: "95%" }}></div>
-                </div>
-              </div>
-
-              <div className="skill_card">
-                <div className="skill_title">
-                  <h3 className="skill_name">CSS</h3>
-                  <span className="skill_parcent">95%</span>
-                </div>
-                <div className="skill_progres_bar">
-                  <div className="skill_progres" style={{ background: "rgb(255,76,96)", width: "95%" }}></div>
-                </div>
-              </div>
-
-              <div className="skill_card">
-                <div className="skill_title">
-                  <h3 className="skill_name">REACT</h3>
-                  <span className="skill_parcent">70%</span>
-                </div>
-                <div className="skill_progres_bar">
-                  <div className="skill_progres" style={{ background: "rgb(255,0,80)", width: "70%" }}></div>
-                </div>
-              </div>
-
-
-              <div className="skill_card">
-                <div className="skill_title">
-                  <h3 className="skill_name">PHP</h3>
-                  <span className="skill_parcent">85%</span>
-                </div>
-                <div className="skill_progres_bar">
-                  <div className="skill_progres" style={{ background: "rgb(255,0,80)", width: "85%" }}></div>
-                </div>
-              </div>
-
-
+              {skillData.map((skill, index) => <SkillCard key={index} data={skill} />)}
             </div>
           </div>
         </div>
@@ -74,7 +83,9 @@ const About = () => {
 
       </div>
 
-      <AboutBox />
+      <div className="about_boxes grid">
+        {aboutBoxData.map((data, index) => <AboutBox key={index} data={data} />)}
+      </div>
     </section>
   )
 }
