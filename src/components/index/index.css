@@ -176,3 +176,10 @@ img {
     margin-left: 110px;
     padding-left: 2rem;
 }
+
+
+.home,
+.about,
+.services {
+    display: none;
+}
