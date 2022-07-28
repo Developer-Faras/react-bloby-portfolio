@@ -1,8 +1,6 @@
 import React from 'react';
 import './portfolio.css';
 
-import WorksData from './WorksData';
-
 const Portfolio = () => {
   return (
     <div className="portfolio section container" id="portfolio">
@@ -16,16 +14,8 @@ const Portfolio = () => {
         <span className="work_item">Branding</span>
       </div>
 
-      <div className="work_container grid">
-        {WorksData.map((work) => {
-          console.log(work)
-          return (
-            <div className="as">
-              asdasd
-            </div>
-          )
-        })}
-        asd
+      <div className="works_container grid">
+        asdasda
       </div>
 
     </div>
