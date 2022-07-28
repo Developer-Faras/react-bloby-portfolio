@@ -1,0 +1,61 @@
+.resume {
+    min-height: 100vh;
+}
+
+.resume_container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+}
+
+.timeline {
+    background: var(--container-color);
+    padding: 1.8rem;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    position: relative;
+}
+
+.resume_card {
+    position: relative;
+    padding-left: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.resume_card:last-child {
+    padding-bottom: 0;
+}
+
+.resume_card::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    left: .25rem;
+}
+
+.resume_card .icon {
+    position: absolute;
+    top: 0;
+    left: -0.4rem;
+    font-size: 1.2rem;
+    background: var(--container-color);
+    padding: 0.3rem 0;
+    color: var(--primary-color);
+}
+
+.resume_card .timeline_year {
+    color: #8b88b1;
+    font-size: var(--small-size);
+    font-weight: var(--normal);
+    padding: 0.3rem 0;
+    margin-bottom: 0.2rem;
+}
+
+.resume_card .timeline_title {
+    font-size: var(--h3-size);
+    margin: 0.3rem 0;
+    font-weight: var(--semibold);
+}
+
+.resume_card .timeline_description {}

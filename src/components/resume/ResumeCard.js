@@ -1,14 +1,15 @@
 import React from 'react';
 
 const ResumeCard = (props) => {
-    console.log(props);
     const { icon, year, title, desc } = props;
 
     return (
         <div className="resume_card">
             <i className={`icon fa-solid ${icon}`} ></i>
 
-            aswd
+            <p className="timeline_year">{year}</p>
+            <h3 className="timeline_title">{title}</h3>
+            <p className="timeline_description">{desc}</p>
         </div>
     )
 }

@@ -180,6 +180,7 @@ img {
 
 .home,
 .about,
-.services {
+.services,
+.resume {
     display: none;
 }
