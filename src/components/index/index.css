@@ -181,6 +181,7 @@ img {
 .home,
 .about,
 .services,
-.resume {
+.resume,
+.portfolio {
     display: none;
 }

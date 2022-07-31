@@ -1,0 +1,87 @@
+.pricing {
+    min-height: 100vh;
+}
+
+.pricing_data {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.8rem;
+    align-items: center;
+}
+
+.pricing_card {
+    padding: 2rem 2.5rem;
+    background: var(--container-color);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    min-height: 26.50rem;
+    transition: all 0.3s ease;
+}
+
+.pricing_card:hover {
+    transform: scale(0.95);
+}
+
+.pricing_card .pricing_image {
+    width: 60px;
+    margin-bottom: 0.8rem;
+}
+
+.pricing_card .plan_name {
+    font-size: var(--h2-size);
+    margin-bottom: 1.25rem;
+    font-weight: var(--bold);
+}
+
+.pricing_card .pricing_title {
+    margin-bottom: 1.5rem;
+}
+
+.pricing_card .support_list {
+    margin-bottom: 2.5rem;
+}
+
+/* 
+.pricing_card .support_list li {
+    position: relative;
+} */
+
+.pricing_card .pricing_price {
+    font-size: var(--h1-size);
+    margin-bottom: 1.5rem;
+}
+
+.pricing_card .pricing_price em {
+    font-size: var(--small-size);
+    font-style: normal;
+    margin-right: 0.5rem;
+    vertical-align: super;
+}
+
+.pricing_card .pricing_price span {
+    font-size: var(--small-size);
+    margin-left: 0.5rem;
+    font-weight: var(--normal);
+}
+
+/* Recomended Price Card Design */
+.pricing_card.best {
+    padding: 3.5rem 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing_card .badge {
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+    padding: 0.6rem 0.4rem;
+    display: block;
+    background: #6c6ce5;
+    color: #fff;
+    font-size: var(--small-size);
+    font-weight: var(--normal);
+    border-radius: 0 0px 15px 15px;
+}
