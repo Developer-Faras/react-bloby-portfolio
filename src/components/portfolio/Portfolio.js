@@ -8,18 +8,18 @@ const Portfolio = () => {
   const [workItems, setWorkItems] = useState(worksData);
 
   const handleFilter = (category) => {
-
-    const filterItems = workItems.filter((work) => {
-      if (category === '') {
-        return worksData;
-      } else if (category !== '') {
+    if (category === '') {
+      setWorkItems(worksData);
+    } else if (category !== '') {
+      const filterItems = worksData.filter((work) => {
         return work.category.toUpperCase() === category.toUpperCase();
-      }
-    })
+      })
 
-    setWorkItems(filterItems);
+      setWorkItems(filterItems);
+    }
   }
 
+  
   return (
     <div className="portfolio section container" id="portfolio">
       <h2 className="section_title">Recent  Works</h2>
