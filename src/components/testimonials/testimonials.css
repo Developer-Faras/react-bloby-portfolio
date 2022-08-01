@@ -5,11 +5,14 @@
 .testimonial_data {
     max-width: 520px;
     margin: 0 auto;
+    height: 280px;
+    margin-top: 6rem;
 }
 
 .testimonial_card {
     text-align: center;
     padding: 0 1.25rem 1.25rem;
+    max-width: 520px;
 }
 
 .testimonial_card .thumb {
@@ -57,4 +60,27 @@
     border-top: 1px solid;
     border-left: 1px solid;
     border-color: rgb(94 92 127);
+}
+
+
+/* Slider Pagination Design */
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 0.6rem;
+    height: 0.6rem;
+    background: var(--primary-color);
+    opacity: 1;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    margin: 0 0.5rem !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 1.2rem;
 }
