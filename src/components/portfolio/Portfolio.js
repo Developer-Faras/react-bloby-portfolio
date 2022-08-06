@@ -19,7 +19,7 @@ const Portfolio = () => {
     }
   }
 
-  
+
   return (
     <div className="portfolio section container" id="portfolio">
       <h2 className="section_title">Recent  Works</h2>

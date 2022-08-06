@@ -26,11 +26,22 @@
     gap: 2rem;
 }
 
+@keyframes fadeCard {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .portfolio .work_card {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    animation: fadeCard 0.3s linear forwards;
 }
 
 .portfolio .work_card .card_mask {
