@@ -182,8 +182,8 @@ img {
 .about,
 .services,
 .resume,
-/* .portfolio, */
-.pricing,
-.testimonoals {
+.portfolio,
+/* .testimonoals */
+.pricing {
     display: none;
 }
